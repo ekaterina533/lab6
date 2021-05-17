@@ -19,7 +19,7 @@ if __name__ == '__main__':
     school.update({input(f'Название изменяемого класса: '): int(input(f'Количество учеников изменяемого класса: '))})
     print('Измененный список:',school)
   elif n == 2:
-    school.setdefault({input(f'Название класса №: '), int(input(f'Количество учеников класса №: '))})
+    school.update({input(f'Название нового класса: '): int(input(f'Количество учеников: '))})
     print('Измененный список:', school)
   elif n == 3:
     school.pop(input(f'Название расформировываемого класса: '))
